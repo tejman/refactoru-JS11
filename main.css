@@ -2,14 +2,16 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: Times;
 }
 
-.profItem {
+.profItem, .editArea {
   max-width: 100%;
   margin: 20px 0;
+  clear: both;
 }
 
-.profItem p {
+.profItem p, .profItem label, .profItem textarea {
   max-width: 75%;
   height: auto;
   display: inline-block;
@@ -28,29 +30,26 @@
 }
 
 .container {
-  margin-top: 20px;
+  padding-top: 25px;
+  overflow: hidden;
 }
 
-
-
-.editArea button {
+.button {
   float: right;
+  margin-right: 150px;
 }
 
-.editArea textarea {
-  padding: 5px;
-  font-size: 1.4em;
-  margin: 0px 0px 10px 0px;
-  border: 2px solid black;
+.editArea {
+  display: none;
+}
+
+.editArea .content-area{
+  background-color: rgba(200, 200, 200, .5);
+  border: none;
+}
+
+.content-area.editing {
+  background-color: rgba(200, 0, 0, .2);
 }
 
 
-label {
-  float: left;
-  text-align: right;
-  margin-right: 15px;
-  width: 100px;
-  padding-top: 5px;
-  font-size: 1.4em;
-  border: 1px solid black;
-}

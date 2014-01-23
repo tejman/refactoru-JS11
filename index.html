@@ -3,29 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <title>Demo</title>
 </head>
 <body>
   
-  <div class="editArea">
-    <button>Edit Profile</button>
+  <div class="container">
+    <button class="button" id="edit-button">Edit Profile</button>
     
-    <form>
+    <form class="editArea">
+      <div class="profItem">
+        <label for="username" class="itemName">Username: </label> 
+        <textarea class="content-area" type="text" data-info-type="username"></textarea>
+      </div>
 
-      <label for="username">Username: </label> 
-      <textarea type="text" name="username"></textarea>
+      <div class="profItem">
+        <label for="bio" class="itemName">Bio: </label> 
+        <textarea class="content-area" type="text" data-info-type="bio"></textarea>
+      </div>
 
-      <label for="bio">Bio: </label> 
-      <textarea type="text" name="bio"></textarea>
+      <div class="profItem">
+        <label for="favBooks" class="itemName">Favorite Books: </label> 
+        <textarea class="content-area" type="text" data-info-type="favBooks"></textarea />
+      </div>
 
-      <label for="favBooks">Favorite Books: </label> 
-      <textarea type="text" name="favBooks"></textarea />
+      <div class="profItem">
+        <label for="favLibs" class="itemName">Favorite JS Libraries: </label> 
+        <textarea class="content-area" type="text" data-info-type="favLibs"></textarea>
+      </div>
 
-      <label for="favLibs">Favorite JS Libraries: </label> 
-      <textarea type="text" name="favLibs"></textarea>
-
-      <input type="submit">
+      <input class="button" id="submit-button" type="submit">
 
     </form>
 
@@ -35,22 +43,22 @@
     
     <div class="profItem">
       <p class="itemName">Username: </p> 
-      <p>USER1234</p>
+      <p data-info-type="username">USER1234</p>
     </div>
 
     <div class="profItem">
       <p class="itemName">Bio: </p> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, adipisci, iusto, quo vero dolores saepe ratione reprehenderit amet qui neque reiciendis numquam veritatis a culpa excepturi quibusdam ab facere fugit cupiditate nam obcaecati quaerat officia odit iure laborum porro inventore eaque necessitatibus mollitia quia. Aliquam, odit molestias aperiam sequi numquam!</p>
+      <p data-info-type="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, adipisci, iusto, quo vero dolores saepe ratione reprehenderit amet qui neque reiciendis numquam veritatis a culpa excepturi quibusdam ab facere fugit cupiditate nam obcaecati quaerat officia odit iure laborum porro inventore eaque necessitatibus mollitia quia. Aliquam, odit molestias aperiam sequi numquam!</p>
     </div>
 
     <div class="profItem">
       <p class="itemName">Favorite Books: </p> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat possimus natus modi ad consequuntur suscipit consequatur accusamus quis totam obcaecati.</p>
+      <p data-info-type="favBooks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat possimus natus modi ad consequuntur suscipit consequatur accusamus quis totam obcaecati.</p>
     </div>
 
     <div class="profItem">
       <p class="itemName">Favorite JS Libraries: </p> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, a.</p>
+      <p data-info-type="favBooks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, a.</p>
     </div>
 
   </div>
@@ -61,4 +69,6 @@
 </body>
 
 </html>
+
+
 
