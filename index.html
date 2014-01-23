@@ -3,22 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <title>Demo</title>
 </head>
 <body>
+  
+  <div class="editArea">
+    <button>Edit Profile</button>
+    
+    <form>
 
-<div class="container">
+      <label for="username">Username: </label> 
+      <textarea type="text" name="username"></textarea>
 
-	
+      <label for="bio">Bio: </label> 
+      <textarea type="text" name="bio"></textarea>
 
-</div>
+      <label for="favBooks">Favorite Books: </label> 
+      <textarea type="text" name="favBooks"></textarea />
+
+      <label for="favLibs">Favorite JS Libraries: </label> 
+      <textarea type="text" name="favLibs"></textarea>
+
+      <input type="submit">
+
+    </form>
+
+  </div>
+
+  <div class="container">
+    
+    <div class="profItem">
+      <p class="itemName">Username: </p> 
+      <p>USER1234</p>
+    </div>
+
+    <div class="profItem">
+      <p class="itemName">Bio: </p> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, adipisci, iusto, quo vero dolores saepe ratione reprehenderit amet qui neque reiciendis numquam veritatis a culpa excepturi quibusdam ab facere fugit cupiditate nam obcaecati quaerat officia odit iure laborum porro inventore eaque necessitatibus mollitia quia. Aliquam, odit molestias aperiam sequi numquam!</p>
+    </div>
+
+    <div class="profItem">
+      <p class="itemName">Favorite Books: </p> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat possimus natus modi ad consequuntur suscipit consequatur accusamus quis totam obcaecati.</p>
+    </div>
+
+    <div class="profItem">
+      <p class="itemName">Favorite JS Libraries: </p> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, a.</p>
+    </div>
+
+  </div>
 
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="utility.js"></script>
 <script src="main.js"></script>
 
 </body>
+
 </html>
+

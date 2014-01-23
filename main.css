@@ -1,0 +1,56 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.profItem {
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.profItem p {
+  max-width: 75%;
+  height: auto;
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;
+  vertical-align: top;
+  border: 1px dashed black;
+  padding: 3px;
+}
+
+.profItem .itemName {
+  width: 24%;
+  text-align: right;
+  border: none;
+  padding: none;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+
+
+.editArea button {
+  float: right;
+}
+
+.editArea textarea {
+  padding: 5px;
+  font-size: 1.4em;
+  margin: 0px 0px 10px 0px;
+  border: 2px solid black;
+}
+
+
+label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 100px;
+  padding-top: 5px;
+  font-size: 1.4em;
+  border: 1px solid black;
+}
